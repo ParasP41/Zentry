@@ -86,15 +86,14 @@ const Hero = () => {
   return (
     <div className='relative h-dvh w-screen overflow-x-hidden'>
       {isLoading && 
-      <div className='flex-center absolute z-[100] h-dvh w-screen overflow-hidden'>
+     ( <div className='flex-center absolute z-[100] h-dvh w-screen overflow-hidden'>
         <div className='three-body'>
           <div className='three-body__dot'></div>
           <div className='three-body__dot'></div>
           <div className='three-body__dot'></div>
         </div>
-      </div>
-      }
-      <div id='video-frame' className='relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75'>
+      </div>) }
+       <div id='video-frame' className='relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75'>
         <div>
           <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg'>
             <div onClick={handleMiniVDClick} className='origin-center scale-50 opacity-0 transition-all duration-900 ease-in hover:scale-100 hover:opacity-100'>
@@ -120,3 +119,9 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+
+
+
+

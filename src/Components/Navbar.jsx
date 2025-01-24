@@ -83,7 +83,7 @@ export default function Navbar() {
                 <div className='hidden '>
                 </div>
                 {navItems.map((item)=> (
-                    <a key={item} href={`#${item.toLowerCase()}`} className=' nav-hover-btn'>
+                    <a key={item} className=' nav-hover-btn'>
                     {item}
                     </a>
                     )
